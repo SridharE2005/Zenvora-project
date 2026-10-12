@@ -1,0 +1,40 @@
+:root {
+
+  --background-color: #1C1C1C;
+  --text-color: white;
+
+  /* Font Sizes */
+  --font-small: 14px;
+  --font-medium: 16px;
+  --font-large: 24px;
+  --font-heading: 36px;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-xl: 40px;
+
+
+  /* Shadows */
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-medium);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}

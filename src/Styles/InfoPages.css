@@ -1,0 +1,379 @@
+.info-page {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 84vh;
+    margin: 0 auto;
+    padding: 30px 6% 60px;
+}
+
+.info-hero {
+    padding: 48px 36px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(15px);
+}
+
+.info-eyebrow {
+    margin-bottom: 12px;
+    color: #F91F30;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.info-hero h1 {
+    margin-bottom: 14px;
+    color: #F91F30;
+    font-size: clamp(30px, 5vw, 48px);
+}
+
+.info-hero > p:last-child {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #e2e2e2;
+    line-height: 1.7;
+}
+
+.info-card {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(15px);
+}
+
+.service-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 26px 0;
+}
+
+.service-navigation a,
+.secondary-link {
+    padding: 11px 17px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.service-navigation a:hover,
+.service-navigation a.active,
+.secondary-link:hover {
+    border-color: #F91F30;
+    background: rgba(249, 31, 48, 0.14);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 230px;
+    padding: 26px;
+}
+
+.info-card-icon {
+    margin-bottom: 16px;
+    color: #F91F30;
+    font-size: 28px;
+}
+
+.service-card h2,
+.service-detail h2,
+.about-story h2,
+.contact-form-card h2,
+.contact-help h2 {
+    margin-bottom: 12px;
+    font-size: 23px;
+}
+
+.service-card p,
+.service-detail > p:not(.info-eyebrow),
+.about-story p,
+.contact-form-card > p,
+.contact-help > p {
+    color: #d5d5d5;
+    line-height: 1.7;
+}
+
+.text-link {
+    margin-top: auto;
+    padding-top: 20px;
+    color: #ff5965;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    color: white;
+}
+
+.service-detail {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.service-detail h3 {
+    margin: 24px 0 12px;
+}
+
+.service-highlights {
+    display: grid;
+    gap: 10px;
+    padding-left: 22px;
+    color: #e2e2e2;
+    line-height: 1.6;
+}
+
+.service-highlights li::marker {
+    color: #F91F30;
+}
+
+.info-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.primary-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 20px;
+    border: 0;
+    border-radius: 30px;
+    background: #F91F30;
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.primary-link:hover {
+    transform: translateY(-2px);
+    background: #d91625;
+}
+
+.about-story {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 36px;
+    margin-top: 26px;
+    padding: 34px;
+}
+
+.about-story > div:first-child p:not(.info-eyebrow) {
+    margin-bottom: 16px;
+}
+
+.about-story .primary-link {
+    margin-top: 8px;
+}
+
+.about-values {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+}
+
+.about-values article {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.about-values article > svg {
+    flex: 0 0 auto;
+    color: #F91F30;
+    font-size: 24px;
+}
+
+.about-values h3 {
+    margin-bottom: 5px;
+}
+
+.about-values p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.about-cta {
+    margin-top: 26px;
+    padding: 28px;
+    text-align: center;
+}
+
+.about-cta h2 {
+    margin-bottom: 8px;
+}
+
+.about-cta p {
+    margin-bottom: 18px;
+    color: #d5d5d5;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.8fr);
+    gap: 24px;
+    margin-top: 26px;
+    align-items: start;
+}
+
+.contact-form-card,
+.contact-help {
+    padding: 28px;
+}
+
+.contact-form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.contact-form-card label {
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.contact-form-card input,
+.contact-form-card select,
+.contact-form-card textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.18);
+    color: white;
+    font: inherit;
+}
+
+.contact-form-card select option {
+    background: #1C1C1C;
+}
+
+.contact-form-card input::placeholder,
+.contact-form-card textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form-card input:focus,
+.contact-form-card select:focus,
+.contact-form-card textarea:focus {
+    outline: 2px solid #F91F30;
+    outline-offset: 1px;
+}
+
+.contact-form-card textarea {
+    resize: vertical;
+}
+
+.contact-submit {
+    align-self: flex-start;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.form-notice {
+    padding: 12px;
+    border-left: 3px solid #F91F30;
+    background: rgba(249, 31, 48, 0.1);
+    color: #f1f1f1;
+    line-height: 1.5;
+}
+
+.contact-help {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.contact-help-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-help-link > svg {
+    flex: 0 0 auto;
+    color: #F91F30;
+    font-size: 22px;
+}
+
+.contact-help-link span {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-help-link small {
+    color: #c9c9c9;
+    line-height: 1.4;
+}
+
+.contact-help-link:hover strong {
+    color: #ff5965;
+}
+
+@media (max-width: 760px) {
+    .info-page {
+        padding: 22px 5% 40px;
+    }
+
+    .info-hero {
+        padding: 36px 22px;
+    }
+
+    .service-grid,
+    .about-story,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-story,
+    .service-detail,
+    .contact-form-card,
+    .contact-help {
+        padding: 24px;
+    }
+
+    .about-values {
+        gap: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-navigation {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .service-navigation a {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .service-card {
+        min-height: auto;
+    }
+}
